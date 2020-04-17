@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+
 install_default_packages() {
   # Only install default packages after successfully installing Python.
   [ "$STATUS" = "0" ] || return 0
@@ -6,7 +7,7 @@ install_default_packages() {
   local installed_version requirements_file args
 
   installed_version=$1
-  requirements_file=${PYENV_ROOT}/default-packages
+  requirements_file=${PYENV_DEFAULT_PACKAGES:-${PYENV_ROOT}/requirements.txt}
 
   if [ -f "$requirements_file" ]; then
     args=( -r "$requirements_file" )
