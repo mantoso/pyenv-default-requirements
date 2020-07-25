@@ -12,7 +12,7 @@ Forked from the excellent [`rbenv-default-gems`][1] plugin from [sstephenson][2]
 
 Make sure you have the latest pyenv version, then run:
 
-    git clone https://github.com/jawshooah/pyenv-default-packages.git $(pyenv root)/plugins/pyenv-default-packages
+    git clone https://github.com/mantoso/pyenv-default-requirements.git $(pyenv root)/plugins/pyenv-default-requirements
 
 ### Installing with Homebrew (for OS X users)
 
@@ -23,23 +23,23 @@ Mac OS X users can install pyenv-default-packages with the
  with Homebrew.*
 
 ```
-$ brew install jawshooah/pyenv/pyenv-default-packages
+$ brew install mantoso/pyenv/pyenv-default-requirements
 ```
 
 Or, if you would like to install the latest development release:
 
 ```
-$ brew install --HEAD jawshooah/pyenv/pyenv-default-packages
+$ brew install --HEAD mantoso/pyenv/pyenv-default-requirements
 ```
 
 ## Usage
 
-pyenv-default-packages automatically installs the packages listed in the
-`$(pyenv root)/default-packages` file every time you successfully install a new
+pyenv-default-requirements automatically installs the packages listed in the
+`$(pyenv root)/requirements.txt` file every time you successfully install a new
 version of Python with `pyenv install` or create a virtualenv with
 `pyenv virtualenv`.
 
-Specify packages in `$(pyenv root)/default-packages` by name, one per line. This
+Specify packages in `$(pyenv root)/requirements.txt` by name, one per line. This
 file should follow the pip [requirements file format][3]. For example:
 
     pytest >= 2.6.4
