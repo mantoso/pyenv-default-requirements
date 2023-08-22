@@ -11,13 +11,7 @@ Forked from the excellent [`rbenv-default-gems`](https://github.com/sstephenson/
 Make sure you have the latest pyenv version, then run:
 
 ```shell
-git clone https://github.com/mantoso/pyenv-default-requirements.git ${HOME}.pyenv/plugins/pyenv-default-requirements
-```
-
-Or, if your `pyenv` is not installed in your home directory:
-
-```shell
-git clone https://github.com/mantoso/pyenv-default-requirements.git $(pyenv root)/plugins/pyenv-default-requirements
+git clone git@github.com:mantoso/pyenv-install-latest.git "$(pyenv root)"/plugins/pyenv-install-latest
 ```
 
 ### Installing with Homebrew
